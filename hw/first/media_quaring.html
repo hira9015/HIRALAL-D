@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta http-equiv="refresh" content="3">
+<head>
+	<title>media quary</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		h1{
+			margin-bottom: 15px;
+		}
+		#p1{
+			background-color: pink;
+			width:300px;
+			height: 300px; 
+		}
+		#p2{
+			background-color: green;
+			width: 75px;
+			height: 75px;
+		}
+
+		@media(min-width:1200px){
+			#p1{
+				width: 80%
+			}
+			#p2{
+				width: 100px;
+				height: 100px;
+			}
+		}
+		@media(min-width: 720px) and (max-width: 1199px){
+			#p1{
+				width: 60%
+			}
+			#p2{
+				width:80px;
+				height: 80px;
+			}	
+		
+		}
+
+	</style>
+</head>
+<body>
+	<h1>media quaring</h1>
+	<p id="p1"></p>
+	<p id="p2"></p>
+
+</body>
+</html>
